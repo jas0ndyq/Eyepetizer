@@ -1,0 +1,39 @@
+<div class="titleContainer">
+  <div class="indexNav">
+    <ul class="indexNavList">
+      <li>关于</li>
+      <li>博客</li>
+      <li>项目地址</li>
+    </ul>
+  </div>
+  <div class="titleLogo">
+  </div>
+  <div class="videoCover"></div>
+  <video id="video" autoplay="" loop="" poster="http://static.wdjimg.com/www/images/www/eyepetizer/home/home_poster.625d8ee7.jpg" webkit-playsinline=""><source type="video/mp4" src="http://static.wdjimg.com/eyepetizer/video.mp4"></video>
+</div>
+
+<div class="container-fluid myContainer">
+  <div class="row myContainerContent" ng-repeat="mainData in totalData">
+      <div class="detailDate">
+        <p class="detailDateDesc">{{ mainData.date | date:'M月dd日' }}</p>
+      </div>
+    <div class="col-md-6 detailPiece" ng-repeat="detailData in mainData.videoList">
+      <!--Body content-->
+      <a href="#/phones/{{detailData.id}}" target="_blank">
+
+      <div class="detailImg">
+        <img ng-src="{{detailData.coverForFeed}}" alt="{{detailData.title}}" class="detailImgContent">
+        <div class="detailDesc">
+        <p class="detailDescTitle">{{detailData.title}}</p>
+        <p class="detailCate"><span>#{{detailData.category}}</span><span class="detailDura">{{detailData.duration | checkSeconds}}</span></p>
+      </div>
+      </div>
+
+      </a>
+    </div>
+    </div>
+  <div class="loadBtn">
+    <button ng-click="loadMore()">前一天</button>
+  </div>
+
+</div>

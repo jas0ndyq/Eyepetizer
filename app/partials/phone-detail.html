@@ -1,0 +1,22 @@
+
+<div class="container-fluid detailContainer">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="videoContainer">
+        <video controls name="media" ng-src="{{playUrl_1}}" id="video1">
+        </video>
+        <img class="videoContainerCover" ng-src="{{coverForDetail}}" ng-show="v">
+        <img class="videoContainerCover videoContainerCoverBlur" ng-src="{{blurredCover}}" ng-show="v" >
+        <div class="playBtnContainer">
+          <span class="glyphicon glyphicon-play playBtn" ng-show="v" ng-click="playVideo()"></span>
+        </div>
+      </div>
+      <div class="detailDescContainer">
+      <h2 class="detailDescTitle">{{title}}</h2>
+      <p><span class="detailDescCate">{{category}} / </span>{{duration | checkSeconds}}</p>
+      <p>{{description}}</p>
+      </div>
+
+    </div>
+  </div>
+</div>

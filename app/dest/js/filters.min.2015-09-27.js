@@ -1,0 +1,2 @@
+/*! angular-phonecat 2015-09-27 */
+"use strict";angular.module("phonecatFilters",[]).filter("checkmark",function(){return function(a){return a?"✓":"✘"}}).filter("checkSeconds",function(){return function(a){var b=0,c=0,d=0;return 60>=a?d=a+"秒":(b=parseInt(a/60),c=a%60,d=b+"'"+c+"''"),d}});
