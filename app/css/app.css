@@ -337,7 +337,7 @@ h1 {
   z-index: 10
 }
 
-#backtop.light button,#backtop.light button:active {
+#backtop.light button,#backtop.light button:active, #backtop.light button:focus, #backtop.light button:hover {
   background: #004d40;
   color: white;
   padding: .7em 1em;
