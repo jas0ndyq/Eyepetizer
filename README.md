@@ -36,3 +36,10 @@ http://baobab.wandoujia.com/api/v1/video/related/2492/?num=6
 http://www.wandoujia.com/eyepetizer/detail.html?vid=2492
 
 ``2492``为当前视频ID
+
+---
+
+##更新
+
+####2016-1-30
+更新视频URL
