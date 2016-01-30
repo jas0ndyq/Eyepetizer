@@ -1,0 +1,2 @@
+/*! angular-phonecat 2016-01-30 */
+"use strict";var phonecatApp=angular.module("phonecatApp",["ngRoute","phonecatControllers","phonecatFilters","angular.backtop"]);phonecatApp.config(["$routeProvider",function(a){a.when("/index",{templateUrl:"partials/video-list.html",controller:"PhoneListCtrl"}).when("/detail/:detailId",{templateUrl:"partials/video-detail.html",controller:"PhoneDetailCtrl"}).otherwise({redirectTo:"/index"})}]),window.screen.width<768&&(alert("检测到移动设备，进入官网下载App"),window.location="http://www.wandoujia.com/eyepetizer");
